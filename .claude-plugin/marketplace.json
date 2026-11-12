@@ -1,0 +1,14 @@
+{
+  "name": "alanmeza-mister-seo",
+  "owner": {
+    "name": "Alanmeza.ai"
+  },
+  "plugins": [
+    {
+      "name": "mister-seo",
+      "source": "./claude/mister-seo",
+      "description": "Auditoría SEO e IA con dos notas y correcciones confirmadas.",
+      "version": "0.2.0"
+    }
+  ]
+}

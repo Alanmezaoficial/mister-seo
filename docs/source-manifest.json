@@ -1,0 +1,18 @@
+{
+  "sourceCommit": "0a7ef08986eabfa6452f7055cddb6582d074b9d7",
+  "engineVersion": "0.2.0",
+  "distributionVersion": "1.0.0",
+  "preserved": [
+    "scripts",
+    "tests",
+    "schema",
+    "references",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "excluded": [
+    ".git",
+    ".github",
+    "assets (promotional images)"
+  ]
+}

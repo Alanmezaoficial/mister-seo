@@ -1,0 +1,23 @@
+{
+  "name": "Mister Seo",
+  "editions": {
+    "claude": {
+      "label": "Claude Code",
+      "zip": "mister-seo-claude-1.0.0.zip",
+      "manualLabel": "Windows · PowerShell",
+      "manual": "git clone https://github.com/Alanmezaoficial/mister-seo.git \"$env:USERPROFILE/mister-seo\"\nclaude --plugin-dir \"$env:USERPROFILE/mister-seo/claude/mister-seo\"",
+      "manualHint": "Necesitas Git y Node.js 18 o superior. La guía incluye macOS/Linux y cómo activar la edición desde el ZIP.",
+      "linkPrompt": "Instala Mister Seo para Claude Code desde https://github.com/Alanmezaoficial/mister-seo. Lee docs/guia-claude.md y conserva la carpeta claude/mister-seo completa, incluidos scripts, referencias, esquemas, pruebas, LICENSE y NOTICE. Comprueba Node 18+ y no sobrescribas instalaciones existentes. No audites sitios, conectes cuentas ni apliques correcciones durante la instalación. Comprueba la estructura y explícame cómo verificar la activación en una sesión nueva. Si no tienes acceso a archivos o ejecución, explica qué falta sin afirmar que se instaló.",
+      "zipPrompt": "Instala Mister Seo para Claude Code desde el ZIP que adjunto o cuya ruta local te indico. Lee INSTALAR.md. Extrae de forma segura y conserva toda la carpeta mister-seo, incluyendo motor, referencias, LICENSE y NOTICE. No sobrescribas versiones existentes. Verifica Node 18+ y explícame cómo activar la herramienta. Limita el trabajo a instalarla; no modifiques webs ni conectes cuentas."
+    },
+    "codex": {
+      "label": "Codex",
+      "zip": "mister-seo-codex-1.0.0.zip",
+      "manualLabel": "Windows · PowerShell",
+      "manual": "$seoRepo = Join-Path $env:USERPROFILE 'mister-seo'\n$seoSkills = Join-Path $env:USERPROFILE '.agents/skills'\ngit clone https://github.com/Alanmezaoficial/mister-seo.git $seoRepo\nif ($LASTEXITCODE -ne 0) { throw 'Revisa la descarga antes de continuar.' }\nNew-Item -ItemType Directory -Force $seoSkills | Out-Null\nif (Test-Path (Join-Path $seoSkills 'mister-seo')) { throw 'Ya existe una instalación. Revisa su versión.' }\nCopy-Item (Join-Path $seoRepo 'codex/mister-seo') -Destination $seoSkills -Recurse -ErrorAction Stop",
+      "manualHint": "Necesitas Git y Node.js 18 o superior. La guía incluye macOS/Linux y cómo activar la edición desde el ZIP.",
+      "linkPrompt": "Instala Mister Seo para Codex desde https://github.com/Alanmezaoficial/mister-seo. Lee docs/guia-codex.md y conserva la carpeta codex/mister-seo completa, incluidos scripts, referencias, esquemas, pruebas, LICENSE y NOTICE. Comprueba Node 18+ y no sobrescribas instalaciones existentes. No audites sitios, conectes cuentas ni apliques correcciones durante la instalación. Comprueba la estructura y explícame cómo verificar la activación en una sesión nueva. Si no tienes acceso a archivos o ejecución, explica qué falta sin afirmar que se instaló.",
+      "zipPrompt": "Instala Mister Seo para Codex desde el ZIP que adjunto o cuya ruta local te indico. Lee INSTALAR.md. Extrae de forma segura y conserva toda la carpeta mister-seo, incluyendo motor, referencias, LICENSE y NOTICE. No sobrescribas versiones existentes. Verifica Node 18+ y explícame cómo activar la herramienta. Limita el trabajo a instalarla; no modifiques webs ni conectes cuentas."
+    }
+  }
+}
